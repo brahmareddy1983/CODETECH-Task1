@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>A passionate web developer with a love for coding and design.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+        <p>I'm a web developer with experience in creating dynamic websites and applications. I specialize in HTML, CSS, and JavaScript, with a strong focus on responsive design.</p>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>To-Do List app built with JavaScript and local storage.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Responsive Blog Website using HTML and CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>E-commerce site built with React and Redux.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<style>
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Menu */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Home Section */
+.home-section {
+    background: url('home-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-section h1 {
+    font-size: 3rem;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #f4f4f4;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fff;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-section p {
+        font-size: 1.2rem;
+    }
+}
+</style>
+<script>
+// script.js
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    alert('Thank you for reaching out! I will get back to you soon.');
+
+    document.getElementById('contact-form').reset();
+});
+
+</script>
+
+</html>
