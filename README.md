@@ -1,1 +1,6 @@
 # CODETECH-Task1
+Name: PULUGU NAGA BRAHMAREDDY 
+Company: CODTECH IT SOLUTIONS 
+ID:CT12DS2017
+Duration: August to October 
+Menter:
